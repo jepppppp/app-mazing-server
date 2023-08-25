@@ -8,6 +8,7 @@ const HighscoreSchema = new Schema(
     name: { type: String, required: true },
     lrn: { type: String, required: true },
     points: { type: Number, required: true },
+    duration: { type: Number, required: true },
   },
   {
     timestamps: true,
