@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
 //select one game highscore
 router.get("/find/:game_title", async (req, res) => {
   Highscore.find({ game_title: req.params.game_title })
-    .sort({ points: -1 })
+    .sort({ duration: -1 })
     .then((response) => {
       res.json({ success: true, data: response });
     })
