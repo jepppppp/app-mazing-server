@@ -9,6 +9,7 @@ const HighscoreSchema = new Schema(
     lrn: { type: String, required: true },
     points: { type: Number, required: true },
     duration: { type: Number, required: true },
+    grade: { type: String, required: true },
   },
   {
     timestamps: true,
